@@ -9,9 +9,11 @@ public class CalendarTest01 {
         if (c.getFirstDayOfWeek() == Calendar.SUNDAY){
             System.out.println("Terça é o terceiro dia da semana :)");
         }
+
         System.out.println(c.get(Calendar.DAY_OF_WEEK));
         System.out.println(c.get(Calendar.DAY_OF_WEEK_IN_MONTH));
         System.out.println(c.get(Calendar.DAY_OF_YEAR));
+
         Date date = c.getTime();
         System.out.println(date);
         System.out.println(c);
