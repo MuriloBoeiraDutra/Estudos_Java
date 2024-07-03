@@ -28,5 +28,9 @@ public class LocalDateTest01 {
 
         //Localdate == é uma classe imutavel, que foi introduzida na versão 8 do java
         //Date == Evite utilizar, LocalDate >
+        //Calendar == é uma classe abstrata, mutavel, introduzida no java 1.1 e ela pode conter a hora
+
+        // Calendar é considerada mais complexa e menos intuitiva. Além disso, Calendar não tem suporte para muitas
+        // das funcionalidades que LocalDate oferece de maneira mais simples.
     }
 }
