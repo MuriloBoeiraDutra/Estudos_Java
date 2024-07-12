@@ -6,6 +6,9 @@ import java.time.temporal.ChronoUnit;
 
 public class PeriodTest01 {
     public static void main(String[] args) {
+        //Period: Ideal para manipulações com anos, meses e dias. Não lida com horas e minutos.
+        //Duration: Ideal para manipulações com horas, minutos, segundos e nanossegundos. Não lida com anos e meses.
+        //ChronoUnit: Versátil e flexível, pode lidar com qualquer unidade de tempo, desde nanossegundos até milênios. Útil para medir tempo e adicionar/subtrair unidades de tempo específicas.
         LocalDate now = LocalDate.now();
         LocalDate nowAfterTwoYears = LocalDate.now().plusYears(2).plusDays(5);
         Period p1 = Period.between(now, nowAfterTwoYears);

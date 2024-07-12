@@ -7,7 +7,9 @@ import java.time.LocalTime;
 
 public class DurationTest {
     public static void main(String[] args) {
-        //Classe que trabalha com um periodo de tempo, para trabalhar com meses e anos nós temos o Period
+        //Period: Ideal para manipulações com anos, meses e dias. Não lida com horas e minutos.
+        //Duration: Ideal para manipulações com horas, minutos, segundos e nanossegundos. Não lida com anos e meses.
+        //ChronoUnit: Versátil e flexível, pode lidar com qualquer unidade de tempo, desde nanossegundos até milênios. Útil para medir tempo e adicionar/subtrair unidades de tempo específicas.
         LocalDateTime now = LocalDateTime.now();
         LocalDateTime nowAfterTwoYears = LocalDateTime.now().plusYears(2);
         LocalTime timeNow = LocalTime.now();

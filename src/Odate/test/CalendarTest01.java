@@ -4,6 +4,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class CalendarTest01 {
+    //Classe mais antiga, mas sepa pode ter códigos que ainda a utilizam então fique esperto :D
     public static void main(String[] args) {
         Calendar c = Calendar.getInstance();
         if (c.getFirstDayOfWeek() == Calendar.SUNDAY){
